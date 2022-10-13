@@ -72,7 +72,10 @@ int main(int argc, char **argv) {
 					//client connected:
 
 					//create some player info for them:
-					connection_to_player.emplace(c, game.spawn_player());
+					Player* player = game.spawn_player();
+					if (player != nullptr) {
+						connection_to_player.emplace(c, game.spawn_player());
+					}
 
 				} else if (evt == Connection::OnClose) {
 					//client disconnected:
