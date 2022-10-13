@@ -1,10 +1,12 @@
-# (TODO: your game's title)
+# Multiplayer PACMAN
 
-Author: (TODO: your name)
+Author: jingguol
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: It's PACMAN for multiplayer
 
-Networking: (TODO: How does your game implement client/server multiplayer? What messages are transmitted? Where in the code?)
+Networking: This game is supposed to be made in 3D. The bulk of communication is on the transformations of objects in the scene, including players. The server just update and tries to send all the transformations to clients.
+
+I could not finally get the game up and running. As the base code is in 2D, I spent quite a lot of effort on migrating 3D stuff from previous games onto this one and trying to combine it with networking. I am stuck on a linking error, whose screenshot is below.
 
 Screen Shot:
 
@@ -14,7 +16,6 @@ How To Play:
 
 (TODO: describe the controls and (if needed) goals/strategy.)
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources: Assets are created by myself
 
 This game was built with [NEST](NEST.md).
-
